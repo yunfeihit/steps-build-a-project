@@ -1,5 +1,5 @@
 # Steps to build a project
-This is [rules of writing a markdown file](./rules%20of%20writing%20markdown%20file.pdf)  
+This is [rules of writing a markdown file](./src/rules-of-writing-markdown-file.md)  
 These are steps to build a project from scratch.   
 Based on the Oding Project.  
 
