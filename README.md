@@ -7,6 +7,11 @@ Based on [the Oding Project](https://www.theodinproject.com/dashboard).
 This is [rules of writing a markdown file](./src/rules-of-writing-markdown-file.md).  
 
 2. Create **package.json** file
+`npm init`  
+- initial npm so you can install packages.
+- should choose *type: module* for modern JavaScript Project.
+
+3. 
 
 
 
