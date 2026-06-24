@@ -14,14 +14,13 @@ This is [rules of writing a markdown file](./src/rules-of-writing-markdown-file.
 
 3. Create **.gitignore** file
 - use `touch .gitignore` to create
-- add *node_modules/* and *dist/*
-[.gitignore](./src/.gitignore)
+- add *node_modules/* and *dist/* in [.gitignore](./src/.gitignore)
 
 4. Install **webpack**
 - use `npm install --save-dev webpack webpack-cli` to install *Webpack* and *Webpack-cli*(command line interface for Weboack)  
 (`--save-dev` equal to `-D`)
 - use `touch webpack.config.js` to create webpack configuration file. 
-- config webpack.config.js: 
+- config webpack.config.js:  
 template with notes: [webpack.config.js](./src/webpack.config-with-notes.js)  
 template: [webpack.config.js](./src/webpack.config.js)
 
@@ -31,11 +30,11 @@ also create folders:  *src/imgs*, *src/fonts*...
 - use `touch ./src/index.js` create *index.js* file(the entry file which is set in the *webpack.config.js*)
 
 6. Install **HtmlWebpackPlugin**
-- use `npm install --save-dev html-webpack-plugin` to install
+- use `npm install --save-dev html-webpack-plugin` to install  
 This plugin help *webpack* use template.html and generate .html result file.  
-Do not need to put a script tag again in the html file again!(like <script src="scripts.js"></script>)
-- use `touch ./src/template.html` to create *template.html* file.
-- config webpack.config.js: 
+Do not need to put a script tag in the html file again!(like <script src="scripts.js"></script>)
+- use `touch ./src/template.html` to create [template](./src/template.html) file.
+- config webpack.config.js:  
 template with notes: [webpack.config.js](./src/webpack.config-with-notes.js)  
 template: [webpack.config.js](./src/webpack.config.js)
 
@@ -43,7 +42,7 @@ template: [webpack.config.js](./src/webpack.config.js)
 the 3 loader help to handle .html and .css files
 - use `npm install --save-dev style-loader css-loader` to install both.
 - use `npm install --save-dev html-loader` to install.  
-- config webpack.config.js:
+- config webpack.config.js:  
 template with notes: [webpack.config.js](./src/webpack.config-with-notes.js)  
 template: [webpack.config.js](./src/webpack.config.js)
 
@@ -61,8 +60,8 @@ template: [webpack.config.js](./src/webpack.config.js)
 
 10. upload to Github
 [The Oding Project guide](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page)
-- use `git branch gh-pages` to create a new branch for deploy Github pages.
+- use `git branch gh-pages` to create a new branch to deploy Github pages.
 - use `git checkout gh-pages && git merge main --no-edit` to sync main branch to the new branch before deploy.
 - on the new branch, use `npx webpack` to generate latest version of the project.
-- use `git add dist -f`, `git commit -m "Deployment commit"`, `git subtree push --prefix dist origin gh-pages` to force(since .gitignore already ignore 'dist') push the dist folder to remote.
+- use `git add dist -f`, `git commit -m "Deployment commit"`, `git subtree push --prefix dist origin gh-pages` to **force**(since .gitignore already ignore 'dist') and **only push** the dist folder to remote.
 - use `git checkout main` to switch back
