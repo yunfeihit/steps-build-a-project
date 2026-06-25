@@ -9,6 +9,10 @@ export default {
         path: path.resolve(import.meta.dirname), //the absolute path where the genrated file in
         clean: true,  //everytime rerun the file, it will clean the last one
     },
+    devtool: "eval-source-map",
+    devServer: {
+      watchFiles: ["./src/template.html"],  //use 'webpack-dev-server' to see the web page anytime, terminal command is 'npx webpack serve'
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: "./src/template.html", //need create this file manually

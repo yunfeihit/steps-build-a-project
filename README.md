@@ -46,8 +46,13 @@ the 3 loader help to handle .html and .css files
 template with notes: [webpack.config.js](./src/webpack.config-with-notes.js)  
 template: [webpack.config.js](./src/webpack.config.js)
 
-8. Build the Project
+8. Build & Run the Project
 - use `npx webpack` to see the result anytime
+- use `npm install --save-dev webpack-dev-server` to install a online webpack-server to see the web page.
+- use terminal command `npx webpack serve` to see the web page anytime.
+- config webpack.config.js:  
+template with notes: [webpack.config.js](./src/webpack.config-with-notes.js)  
+template: [webpack.config.js](./src/webpack.config.js)
 
 9. TDD(test driven development)
 - use `npm install --save-dev jest` to install **jest**
@@ -56,7 +61,7 @@ template: [webpack.config.js](./src/webpack.config.js)
   create a [babel.config.js] file in the root  
 - use `mkdir __test__` create a folder to contain all the test file(in the root)
 - create [xx.test.js](./src/xx.test.js) files
-- run `npx jest` to see the result anytime
+- run terminal command `npx jest` to see the result anytime
 
 10. upload to Github
 [The Oding Project guide](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page)
