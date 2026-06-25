@@ -27,7 +27,8 @@ template: [webpack.config.js](./src/webpack.config.js)
 ## 5. Build basic file structure
 - use `mkdir src` create *src* folder  
 also create folders:  *src/imgs*, *src/fonts*...
-- use `touch ./src/index.js` create *index.js* file(the entry file which is set in the *webpack.config.js*)
+- use `touch ./src/index.js` create *index.js* file in 'src' folder. *index* is the entry file which is set in the *webpack.config.js*
+- use `touch ./src/style.css` create *style.css* file in 'src' folder.
 
 ## 6. Install **HtmlWebpackPlugin**
 - use `npm install --save-dev html-webpack-plugin` to install  
