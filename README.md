@@ -1,3 +1,11 @@
+# Build a React project
+`npm create vite@latest my-app-name -- --template react`
+`git init`
+`git add .`
+`git commit -m 'Initial commit'`
+`git remote add origin [github-SSH]`
+
+---
 # Steps to build a project
 These are steps to build a front-end git project from scratch.   
 Based on [the Oding Project](https://www.theodinproject.com/dashboard).  
