@@ -1,6 +1,6 @@
 # Build a React project
 `npm create vite@latest my-app-name -- --template react`  
-`git init`. 
+`git init`  
 `git add .`  
 `git commit -m 'Initial commit'`  
 `git remote add origin [github-SSH]`  
