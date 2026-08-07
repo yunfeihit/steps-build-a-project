@@ -4,6 +4,7 @@
 `git add .`  
 `git commit -m 'Initial commit'`  
 `git remote add origin [github-SSH]`  
+`git push -u origin main`
 
 ---
 # Steps to build a project
